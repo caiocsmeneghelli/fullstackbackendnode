@@ -12,7 +12,7 @@ const io = require('socket.io')(server);
 //Configs
 var corsOptions = {
     origin : 'https://fullstackdevreact.herokuapp.com',
-    optionSuccessStatus : 200
+    optionsSuccessStatus : 200
 }
 
 app.use(cors(corsOptions));
