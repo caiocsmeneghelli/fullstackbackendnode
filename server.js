@@ -11,11 +11,11 @@ const io = require('socket.io')(server);
 
 //Configs
 var corsOptions = {
-    origin : 'http://localhost:3000',
+    origin : 'https://fullstackdevreact.herokuapp.com',
     optionSuccessStatus : 200
 }
 
-app.use(cors());
+app.use(cors(corsOptions));
 app.use(express.json());
 
 //Database connection
